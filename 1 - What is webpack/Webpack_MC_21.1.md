@@ -170,55 +170,46 @@ The first one image-webpack-loader loader is used to compress image and then url
 	    
 	    {
 	    
-	    loader:  'image-webpack-loader',
-	    
-	    options: {
-	    
-	    mozjpeg: {
-	    
-	    progressive:  true,
-	    
-	    quality:  65
-	    
-	    },
-	    
-	    // optipng.enabled: false will disable optipng
-	    
-	    optipng: {
-	    
-	    enabled:  false,
-	    
-	    },
-	    
-	    pngquant: {
-	    
-	    quality:  '65-90',
-	    
-	    speed:  4
-	    
-	    },
-	    
-	    gifsicle: {
-	    
-	    interlaced:  false,
-	    
-	    },
-	    
-	    // the webp option will enable WEBP
-	    
-	    webp: {
-	    
-	    quality:  75
-	    
-	    }
-	    
-	    }
-	    
-	    },
+		    loader:  'image-webpack-loader',
+		    options: {
+		    mozjpeg: {
+			    progressive:  true,
+			    quality:  65
+			    },
+		    // optipng.enabled: false will disable optipn
+			    optipng: {	    
+			    enabled:  false,
+			    },
+			    
+			    pngquant: {
+			    
+			    quality:  '65-90',
+			    
+			    speed:  4
+		    
+		    },
+		    
+		    gifsicle: {
+		    
+		    interlaced:  false,
+		    
+		    },
+		    
+		    // the webp option will enable WEBP
+		    
+		    webp: {
+		    
+		    quality:  75
+		    
+		    }
+		    
+		    }
+		    
+		    },
 	    ],
     
     }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1OTYxNTk5MiwtNDc1ODU4MDI4XX0=
+eyJoaXN0b3J5IjpbMjEwOTc5MjYxNywtNDc1ODU4MDI4XX0=
 -->
