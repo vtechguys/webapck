@@ -110,57 +110,30 @@ The first one image-webpack-loader loader is used to compress image and then url
 	    // "url-loader",
 	    //It needs to decide based on size how image is to appear after
 	    // it is compressed by image-webpack-loader. So need to pass configurations
-	    
 	    // which are done as.
-	    
 	    {
-	    
 	    loader: "url-loader",
-	    
 	    options: {
-	    
-	    limit: 40000
-	    
-	    // This way we are able to provide configuration to url-loader loader
-	    
-	    // to how compile imagen in webpack flow based on size of compressed
-	    
-	    // image. If size is <=40000(40KB) then bundle it in bundle.js else
-	    
-	    // make a seprate
-	    
-	    }
-	    
+		      limit: 40000
+		    // This way we are able to provide configuration to url-loader loader
+		    // to how compile imagen in webpack flow based on size of compressed
+		    // image. If size is <=40000(40KB) then bundle it in bundle.js else
+		    // make a seprate
+		    }
 	    },
-	    
 	    "image-webpack-loader"
-	    
-	      
-	    
 	    ]
-	    
-	      
-	    
 	    */
 	    
 	    test: /\.(gif|png|jpe?g|svg)$/i,
-	    
 	    use: [
-	    
 	    {
-	    
 	    loader:  'file-loader',
-	    
 	    options: {
-	    
-	    outputPath: (url, resourcePath, context) =>{
-	    
-	    return  "assets/"  +  url;
-	    
+		    outputPath: (url, resourcePath, context) =>{
+		    return  "assets/"  +  url;
+		    }
 	    }
-	    
-	    }
-	    
 	    },
 	    {
 	    
@@ -194,5 +167,5 @@ The first one image-webpack-loader loader is used to compress image and then url
     }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDUyMjkzNjksLTQ3NTg1ODAyOF19
+eyJoaXN0b3J5IjpbMzEwMzA0OTMzLC00NzU4NTgwMjhdfQ==
 -->
