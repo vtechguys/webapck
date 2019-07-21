@@ -36,29 +36,30 @@ What roughly webpack is doing.
 
     var  myModules  = [
 
-function  sum(){
+	    function  sum(){
+	    
+		    const  sum  = (a, b) =>  a  +  b;
+		    
+		    return  sum;
+	    
+	    },
+    
+	    function(){
+	    
+		    const  sum  =  myModules[0]();
+		    
+		    console.log(sum(10, 5));
+		    
+	    }
+    
+    ];
+    
+    var  entryPointIndex  =  1;
+    
+    myModules[entryPointIndex]();
 
-const  sum  = (a, b) =>  a  +  b;
-
-return  sum;
-
-},
-
-function(){
-
-const  sum  =  myModules[0]();
-
-console.log(sum(10, 5));
-
-}
-
-];
-
-var  entryPointIndex  =  1;
-
-myModules[entryPointIndex]();
-
+webpack creates a array and 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU2MjA1OTQsLTE2OTMwOTgzMzAsNTY1Nz
-Y4NzY3LC00MDE4MDc4MjAsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTIwOTEyNTQ1NjMsLTE2OTMwOTgzMzAsNT
+Y1NzY4NzY3LC00MDE4MDc4MjAsLTIwODg3NDY2MTJdfQ==
 -->
