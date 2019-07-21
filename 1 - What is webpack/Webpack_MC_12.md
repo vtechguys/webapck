@@ -17,31 +17,21 @@ Now `node index.js` will run our index.js and we get console 15 as output on run
 ## Webpack
 Lets install webpack locally as dev dependency using `npm` or `yarn` . Here I have used webpack@2.2.0 . As for version 2 we need a `webpack.config.js` file which is required by webpack which exposes some minimum configuration for webpack to run.
 
-    // Path independent of OS.
+   
 
-const  path  =  require("path");
-
-  
-
-// Minimum required configuration.
-
-const  config  = {
-
-entry:  "./src/index.js",
-
-output: {
-
-path:  path.resolve(__dirname, "build"),
-
-filename:  "bundle.js"
-
-},
-
-};
-
-module.exports  =  config;
+     // Path independent of OS.
+    const  path  =  require("path");
+    // Minimum required configuration.
+    const  config  = {
+	    entry:  "./src/index.js",
+	    output: {
+		    path:  path.resolve(__dirname, "build"),
+		    filename:  "bundle.js"
+	    }
+    }; 
+    module.exports  =  config;
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODM3NjU0NDMsLTE2OTMwOTgzMzAsNT
+eyJoaXN0b3J5IjpbLTE4NzQ1MDMxNTksLTE2OTMwOTgzMzAsNT
 Y1NzY4NzY3LC00MDE4MDc4MjAsLTIwODg3NDY2MTJdfQ==
 -->
