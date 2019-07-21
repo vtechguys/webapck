@@ -60,16 +60,22 @@ The changes in webpack config are in modules where we add another rule set for c
     	use: ["style-loader", "css-loader"],
     	test: /\.css$/
     }
-Now when we run build script and see bundle.js we will see the html output in browser and we can see the image has a border.![browser screenshot of applied css](https://res.cloudinary.com/ajcloud/image/upload/v1563734695/webpack-style-loader.png)
-Now if we see the element in developer tools we will find that the style is being applied in the head in style tags.![webpack-css-loader-elements-devtools-ss](https://res.cloudinary.com/ajcloud/image/upload/v1563734931/webpack-css-loader-elements-devtools-ss.png)
+Now when we run build script and see bundle.js we will see the html output in browser and we can see the image has a border.
+![browser screenshot of applied css](https://res.cloudinary.com/ajcloud/image/upload/v1563734695/webpack-style-loader.png)
+
+Now if we see the element in developer tools we will find that the style is being applied in the head in style tags.
+
+![webpack-css-loader-elements-devtools-ss](https://res.cloudinary.com/ajcloud/image/upload/v1563734931/webpack-css-loader-elements-devtools-ss.png)
+
 We created this html doc ourselves how could webpack have put this styling in our html. However on disk there is no change in file but in browser it seems there is some change? This means the change is occuring from bundle.js as its only thing we included in our html file manually. That means our style was somehow exported to bundle.js itself. This can be verified if we search in bundle.js file for css we put. 
 
     "img{\\n border: 10px solid black;\\n}\"
 
  The raw css is transformed as string and is pushed html document after page bundle.js is loaded. 
  The flow: The image_viewer file imports css file. css-loader reads the content of this .css file and reads it to convert to long string and sticks it to bundle.js file. Then style-loader looks at string and push some code in bundle.js to take that string put it inside its own style tag inside html head once bundle.js is completely loaded and run.
+ But that'snot behaviour we ever want not only it increases the size of bundle,js but seprations of concerns and brow
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDU5NDEwOTYsNTc0Mzk0MzQ2LDIyOT
-M5MDM0NiwxNDk4MjI1MzI3LDk0MjMxOTY1MywtMjA4ODc0NjYx
-Ml19
+eyJoaXN0b3J5IjpbMTUwNzk2OTA2MSwtMTQ0NTk0MTA5Niw1Nz
+QzOTQzNDYsMjI5MzkwMzQ2LDE0OTgyMjUzMjcsOTQyMzE5NjUz
+LC0yMDg4NzQ2NjEyXX0=
 -->
