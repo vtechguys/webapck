@@ -95,10 +95,14 @@ Its new plugin for purpose is:
  This generates a single style css file. But for it to work manually add a link tag and add a refer to `./style.css` 
 
 ## Adding Image loaders
-Images from local can be loaded in two ways first image can be included in bundle.js as raw dataor else it can be sprately put into assets. For It to work we need two p
+Images from local can be loaded in two ways first image can be included in bundle.js as raw dataor else it can be sprately put into assets. For It to work we need two packages.
+
+    npm install image-webpack-loader url-loader --save-dev
+
+The first one image-webpack-loader loader is used to compress image and then urls loader decide based on size of image that this needs to be included 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MzkyOTM5MiwtMTU3MjUyMDE1OCwtMT
-A3ODc0MjQwLC0xNDQ1OTQxMDk2LDU3NDM5NDM0NiwyMjkzOTAz
-NDYsMTQ5ODIyNTMyNyw5NDIzMTk2NTMsLTIwODg3NDY2MTJdfQ
-==
+eyJoaXN0b3J5IjpbLTIxMTg4MDQ3OTYsLTE1NzI1MjAxNTgsLT
+EwNzg3NDI0MCwtMTQ0NTk0MTA5Niw1NzQzOTQzNDYsMjI5Mzkw
+MzQ2LDE0OTgyMjUzMjcsOTQyMzE5NjUzLC0yMDg4NzQ2NjEyXX
+0=
 -->
