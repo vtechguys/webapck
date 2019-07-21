@@ -74,9 +74,10 @@ We created this html doc ourselves how could webpack have put this styling in ou
  The raw css is transformed as string and is pushed html document after page bundle.js is loaded. 
  The flow: The image_viewer file imports css file. css-loader reads the content of this .css file and reads it to convert to long string and sticks it to bundle.js file. Then style-loader looks at string and push some code in bundle.js to take that string put it inside its own style tag inside html head once bundle.js is completely loaded and run.
  But that's not behaviour we ever want not only it increases the size of bundle,js but separations of concerns and browser requesting different files differently in parallel are not being used.
- What we want is to bun
+ What we want is to bundle all such css to one place. And refer that in index.html file.
+ For this we need to install a plugin that takes texts string  genrated by css-loader and stuff that 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA4MjEwNjUwLC0xNDQ1OTQxMDk2LDU3ND
-M5NDM0NiwyMjkzOTAzNDYsMTQ5ODIyNTMyNyw5NDIzMTk2NTMs
-LTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTAyMjM1NTk4MywtMTQ0NTk0MTA5Niw1Nz
+QzOTQzNDYsMjI5MzkwMzQ2LDE0OTgyMjUzMjcsOTQyMzE5NjUz
+LC0yMDg4NzQ2NjEyXX0=
 -->
