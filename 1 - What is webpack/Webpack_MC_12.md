@@ -5,9 +5,9 @@ In Node.js or other module system a file may expose some or all of its content a
 	|    |-- index.js
 	|    |-- sum.js
 
-THe
+The contents of files. sum.js is utility function and index.js is entry point utilizing this sum.js utiltiy. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIxNjgxODQ5LC00MDE4MDc4MjAsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTExNzM1MzE4ODIsLTQwMTgwNzgyMCwtMj
+A4ODc0NjYxMl19
 -->
