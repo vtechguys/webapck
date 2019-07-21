@@ -3,11 +3,44 @@ The module loaders are used to do some preprocessing on our files before they ar
 ## Adding babel
 Babel turns ES@latest code into older codes to be able to run on old browser. Whereas simply webpack is to link js modules together.
 
+    npm install babel-loader @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-react @babel/register --save-dev
+
+Not all are required to be understood now. Important are:
 **babel-loader:** *teaches babel how to interact and work with webpack.*
 **babel-core:** *knows how to take in code parse it and generate some output files.*
 **babel-preset-env:** *ruleset for telling babel exactly what pieces of ES@latest syntax to look for and how to turn in ES5 code.*
+ Thus babel loader needs to be put to interact with webpack. Loaders are to be operated on certain type of file, like babel needs to be applied on js file only.
 
+    const  path  =  require("path");
+	// Minimum required configuration.
+    const  config  = {
+	    entry:  "./src/index.js",
+	    output: {
+		    path:  path.resolve(__dirname, "build"),
+		    filename:  "bundle.js"
+	    },
+	    module: {
+		    rules: [
+			    {
+				    use:  "babel-loader",
+				    exclude: /node_modules/,
+				    test: /\.js$/,
+			    }
+		    ]
+	    }
+    };
+    module.exports  =  config;
+      
+`module` property is new name for loaders property as from webpack2. Loaders are considered part of module system. `module` property have property called `rules` which is array of different loaders we may be used for `js, jsx, css, image`. A rule is js object which specify `use` property to tell which loader is to be used. It can be an array which is processed from right to left. Then comes `test` property a `regex` to put this loader on regex matching  files. `exclude` is property to exclude folder/files in this processing.
+As babel-core does not know what code to map transpilations to so when babel starts it looks for file `.babelrc` in root. Here we specify some babel configurations like preset to be used to tell it what exactly changes to be made to our code. In `.babelrc`:
+
+    {
+    	"presets":["@babel/preset-env"]
+    }
+So now we may test es import and export statement also if babel was successfully setup then this will work.
+## Adding CSS loader
+Style and css loader help us to make small css files and import those css files at required places/components(reactjs). Thus development is lot easier now. We will make a `image_viewer.js` file which simply has to append to DOM an img tag. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjUxOTQyNyw5NDIzMTk2NTMsLTIwOD
+eyJoaXN0b3J5IjpbMTQ5ODIyNTMyNyw5NDIzMTk2NTMsLTIwOD
 g3NDY2MTJdfQ==
 -->
