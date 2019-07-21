@@ -67,9 +67,9 @@ We created this html doc ourselves how could webpack have put this styling in ou
     "img{\\n border: 10px solid black;\\n}\"
 
  The raw css is transformed as string and is pushed html document after page bundle.js is loaded. 
- The flow: The image_viewer file imports css file. css-loader reads the content of this .css file and reads it to convert to long string and sticks it to bundle.js file. Then style-loader looks at string and push some code in bundle.js to take that string put it inside its own style tag inside html head once bundle.js is completly loaded a
+ The flow: The image_viewer file imports css file. css-loader reads the content of this .css file and reads it to convert to long string and sticks it to bundle.js file. Then style-loader looks at string and push some code in bundle.js to take that string put it inside its own style tag inside html head once bundle.js is completely loaded and run.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTQzOTg2MzIsNTc0Mzk0MzQ2LDIyOT
+eyJoaXN0b3J5IjpbLTE0NDU5NDEwOTYsNTc0Mzk0MzQ2LDIyOT
 M5MDM0NiwxNDk4MjI1MzI3LDk0MjMxOTY1MywtMjA4ODc0NjYx
 Ml19
 -->
