@@ -61,8 +61,9 @@ The changes in webpack config are in modules where we add another rule set for c
     	test: /\.css$/
     }
 Now when we run build script and see bundle.js we will see the html output in browser and we can see the image has a border.![browser screenshot of applied css](https://res.cloudinary.com/ajcloud/image/upload/v1563734695/webpack-style-loader.png)
-Now if we see the element in developer tools we will find that the 
+Now if we see the element in developer tools we will find that the style is being applied in the head in style tags.![webpack-css-loader-elements-devtools-ss](https://res.cloudinary.com/ajcloud/image/upload/v1563734931/webpack-css-loader-elements-devtools-ss.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc0Mzk0MzQ2LDIyOTM5MDM0NiwxNDk4Mj
-I1MzI3LDk0MjMxOTY1MywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbNjUzNTkyNjY0LDU3NDM5NDM0NiwyMjkzOT
+AzNDYsMTQ5ODIyNTMyNyw5NDIzMTk2NTMsLTIwODg3NDY2MTJd
+fQ==
 -->
