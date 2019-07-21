@@ -85,10 +85,10 @@ Its new plugin for purpose is:
 
     npm install --save-dev mini-css-extract-plugin
 
- This generates a single st
+ This generates a single style css file.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkwMDExMzA0LC0xMDc4NzQyNDAsLTE0ND
-U5NDEwOTYsNTc0Mzk0MzQ2LDIyOTM5MDM0NiwxNDk4MjI1MzI3
-LDk0MjMxOTY1MywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTExODY2NTkxOTksLTEwNzg3NDI0MCwtMT
+Q0NTk0MTA5Niw1NzQzOTQzNDYsMjI5MzkwMzQ2LDE0OTgyMjUz
+MjcsOTQyMzE5NjUzLC0yMDg4NzQ2NjEyXX0=
 -->
