@@ -8,6 +8,7 @@ const config = {
         path: path.resolve(__dirname, "build"),
         filename: "bundle.js"
     },
+    mode: "development",
     module: {
         rules: [
             {
@@ -16,6 +17,11 @@ const config = {
                 test: /\.js$/,
 
 
+            }, 
+            { 
+                // applied from right to left
+                use: ["style-loader", "css-loader"],
+                test: /\.css$/
             }
         ]
     }
