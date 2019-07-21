@@ -30,7 +30,7 @@ Lets install webpack locally as dev dependency using `npm` or `yarn` . Here I ha
     }; 
     module.exports  =  config;
 
-Output property needed to resolve the path to build folder there we contain build file. We my add script in package.json `"build": "webpack".` I  use the  webpack locally installed in project folder![enter image description here](https://res.cloudinary.com/ajcloud/image/upload/v1563726454/webpack-compile-console.png)
+Output property needed to resolve the path to build folder there we contain build file. We my add script in package.json `"build": "webpack".` I  use the  webpack locally installed in project folder![console on script run](https://res.cloudinary.com/ajcloud/image/upload/v1563726454/webpack-compile-console.png)
 We must note that webpack is bundle.js is way more bigger then sum of indiviadual files. What webpack does is something like.
 What roughly webpack is doing.
 
@@ -74,7 +74,7 @@ Now to use to bundle inside a html we must make a index.html and add following b
     </html>
 Now open in browser an see the output of console. We see our expected sum of 10 & 5 as 15.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDQyNjMwNTksLTIxMjI2ODcwMDEsLT
+eyJoaXN0b3J5IjpbLTExNjY4Nzk0NjQsLTIxMjI2ODcwMDEsLT
 E2OTMwOTgzMzAsNTY1NzY4NzY3LC00MDE4MDc4MjAsLTIwODg3
 NDY2MTJdfQ==
 -->
