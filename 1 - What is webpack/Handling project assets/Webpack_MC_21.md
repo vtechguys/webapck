@@ -92,10 +92,11 @@ Its new plugin for purpose is:
 
     npm install --save-dev mini-css-extract-plugin
 
- This generates a single style css file. But fo it to work manually add a link tag and add a refer to `./style.css` 
+ This generates a single style css file. But for it to work manually add a link tag and add a refer to `./style.css` 
 
+## Adding Image loaders
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjMzNDkzMjQsLTEwNzg3NDI0MCwtMT
+eyJoaXN0b3J5IjpbLTE1NzI1MjAxNTgsLTEwNzg3NDI0MCwtMT
 Q0NTk0MTA5Niw1NzQzOTQzNDYsMjI5MzkwMzQ2LDE0OTgyMjUz
 MjcsOTQyMzE5NjUzLC0yMDg4NzQ2NjEyXX0=
 -->
