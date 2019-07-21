@@ -33,7 +33,32 @@ Lets install webpack locally as dev dependency using `npm` or `yarn` . Here I ha
 Output property needed to resolve the path to build folder there we contain build file. We my add script in package.json `"build": "webpack".` I  use the  webpack locally installed in project folder![enter image description here](https://res.cloudinary.com/ajcloud/image/upload/v1563726454/webpack-compile-console.png)
 We must note that webpack is bundle.js is way more bigger then sum of indiviadual files. What webpack does is something like.
 What roughly webpack is doing.
+
+    var  myModules  = [
+
+function  sum(){
+
+const  sum  = (a, b) =>  a  +  b;
+
+return  sum;
+
+},
+
+function(){
+
+const  sum  =  myModules[0]();
+
+console.log(sum(10, 5));
+
+}
+
+];
+
+var  entryPointIndex  =  1;
+
+myModules[entryPointIndex]();
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNjMyMTgwNCwtMTY5MzA5ODMzMCw1Nj
-U3Njg3NjcsLTQwMTgwNzgyMCwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbODU2MjA1OTQsLTE2OTMwOTgzMzAsNTY1Nz
+Y4NzY3LC00MDE4MDc4MjAsLTIwODg3NDY2MTJdfQ==
 -->
