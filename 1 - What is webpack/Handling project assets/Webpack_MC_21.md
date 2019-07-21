@@ -81,11 +81,14 @@ We created this html doc ourselves how could webpack have put this styling in ou
     npm i extract-text-webpack-plugin@2.0.0 --save-dev
 
 Plugins have different pipeline then the webpack. The above plugin is not supported though its us can be seen in code repo.
-Its new 
+Its new plugin for purpose is:	
 
-  
+    npm install --save-dev mini-css-extract-plugin
+
+ This generates a single st
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNTM0MDAwOCwtMTA3ODc0MjQwLC0xND
-Q1OTQxMDk2LDU3NDM5NDM0NiwyMjkzOTAzNDYsMTQ5ODIyNTMy
-Nyw5NDIzMTk2NTMsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMzkwMDExMzA0LC0xMDc4NzQyNDAsLTE0ND
+U5NDEwOTYsNTc0Mzk0MzQ2LDIyOTM5MDM0NiwxNDk4MjI1MzI3
+LDk0MjMxOTY1MywtMjA4ODc0NjYxMl19
 -->
