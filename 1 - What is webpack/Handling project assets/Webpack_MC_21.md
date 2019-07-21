@@ -53,15 +53,15 @@ Here I made a folder style in root folder. Put here a file called style.css and 
     img{
     	border: 10px  solid  black;
     }
-The changes in webpack config are in modules where we add another rule set for css files. in module
+The changes in webpack config are in modules where we add another rule set for css files. In `module.rules` add this rule.
 
     {
     	// applied from right to left
     	use: ["style-loader", "css-loader"],
     	test: /\.css$/
     }
-
+Now when we run build script and see bundle.js we will
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MjIxNjE2LDIyOTM5MDM0NiwxNDk4Mj
+eyJoaXN0b3J5IjpbMjY0NDkyOTk1LDIyOTM5MDM0NiwxNDk4Mj
 I1MzI3LDk0MjMxOTY1MywtMjA4ODc0NjYxMl19
 -->
