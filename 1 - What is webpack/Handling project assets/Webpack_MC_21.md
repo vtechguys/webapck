@@ -32,6 +32,7 @@ Not all are required to be understood now. Important are:
     module.exports  =  config;
       
 `module` property is new name for loaders property as from webpack2. Loaders are considered part of module system. `module` property have property called `rules` which is array of different loaders we may be used for `js, jsx, css, image`. A rule is js object which specify `use` property to tell which loader is to be used. It can be an array which is processed from right to left. Then comes `test` property a `regex` to put this loader on regex matching  files. `exclude` is property to exclude folder/files in this processing.
+
 As babel-core does not know what code to map transpilations to so when babel starts it looks for file `.babelrc` in root. Here we specify some babel configurations like preset to be used to tell it what exactly changes to be made to our code. In `.babelrc`:
 
     {
@@ -94,7 +95,7 @@ Its new plugin for purpose is:
  This generates a single style css file. But fo it to work manually add a link tag and add a refer to `./style.css` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDc0NDg5MCwtMTA3ODc0MjQwLC0xND
-Q1OTQxMDk2LDU3NDM5NDM0NiwyMjkzOTAzNDYsMTQ5ODIyNTMy
-Nyw5NDIzMTk2NTMsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTEyNjMzNDkzMjQsLTEwNzg3NDI0MCwtMT
+Q0NTk0MTA5Niw1NzQzOTQzNDYsMjI5MzkwMzQ2LDE0OTgyMjUz
+MjcsOTQyMzE5NjUzLC0yMDg4NzQ2NjEyXX0=
 -->
