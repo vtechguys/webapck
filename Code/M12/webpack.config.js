@@ -37,6 +37,70 @@ const config = {
                     'css-loader',
                 ],
                 test: /\.css$/
+            },
+            {
+                /*
+                
+                test: /\.(jpe?g|png|gif|svg)/,
+                The old way...
+                use:[
+                // "url-loader",
+                //It needs to decide based on size how image is to appear after
+                // it is compressed by image-webpack-loader. So need to pass configurations
+                // which are done as.
+                {
+                loader: "url-loader",
+                options: {
+                      limit: 40000
+                    // This way we are able to provide configuration to url-loader loader
+                    // to how compile imagen in webpack flow based on size of compressed
+                    // image. If size is <=40000(40KB) then bundle it in bundle.js else
+                    // make a seprate
+                    }
+                },
+                "image-webpack-loader"
+                ]
+                */
+                
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                use: [
+                {
+                    loader:  'file-loader',
+                    options: {
+                        outputPath: (url, resourcePath, context) =>{
+                        return  "assets/"  +  url;
+                        }
+                    }
+                },
+                {
+                
+                    loader:  'image-webpack-loader',
+                    options: {
+                    mozjpeg: {
+                        progressive:  true,
+                        quality:  65
+                    },
+                // optipng.enabled: false will disable optipn
+                        optipng: {	    
+                        enabled:  false,
+                        },
+                        pngquant: {
+                        quality:  '65-90',
+                        speed:  4
+                    },
+                    gifsicle: {
+                        interlaced:  false,
+                    },
+                    // the webp option will enable WEBP
+                    webp: {
+                        quality:  75
+                    }
+                
+                    }
+                
+                    },
+                ],
+            
             }
         ]
     },
