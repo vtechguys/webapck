@@ -105,15 +105,10 @@ The first one image-webpack-loader loader is used to compress image and then url
 	    /*
 	    
 	    test: /\.(jpe?g|png|gif|svg)/,
-	    
 	    The old way...
-	    
 	    use:[
-	    
 	    // "url-loader",
-	    
 	    //It needs to decide based on size how image is to appear after
-	    
 	    // it is compressed by image-webpack-loader. So need to pass configurations
 	    
 	    // which are done as.
@@ -199,5 +194,5 @@ The first one image-webpack-loader loader is used to compress image and then url
     }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODYwNDI5MTUsLTQ3NTg1ODAyOF19
+eyJoaXN0b3J5IjpbLTE4MDUyMjkzNjksLTQ3NTg1ODAyOF19
 -->
