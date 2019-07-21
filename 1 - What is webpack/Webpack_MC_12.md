@@ -72,9 +72,9 @@ Now to use to bundle inside a html we must make a index.html and add following b
 	    <script  src="bundle.js"></script>
     </body>
     </html>
-Now open in browser an see the output of console.
+Now open in browser an see the output of console. We see our expected sum of 10 & 5 as 15.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzE1Mjg0NzYsLTIxMjI2ODcwMDEsLT
+eyJoaXN0b3J5IjpbLTExMDQyNjMwNTksLTIxMjI2ODcwMDEsLT
 E2OTMwOTgzMzAsNTY1NzY4NzY3LC00MDE4MDc4MjAsLTIwODg3
 NDY2MTJdfQ==
 -->
