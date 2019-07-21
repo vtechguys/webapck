@@ -4,8 +4,9 @@ The module loaders are used to do some preprocessing on our files before they ar
 Babel turns new ES code into older codes to able to run on old browser. Where as simply webpack is to link js modules together.
 
 **babel-loader:** *teaches babel how to interact and work with webpack.*
-babel-core: knows how to take in code parese it and generate some outpu
+**babel-core:** *knows how to take in code parese it and generate some output files.*
+babel-preset-env: ruleset for telling babel excatly what pieces of ES@latest syntax to look for and how to turn in ES5 co
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQzMzMyMjM2LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTYzNjEzNzU1OSwtMjA4ODc0NjYxMl19
 -->
