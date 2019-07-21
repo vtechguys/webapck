@@ -48,8 +48,13 @@ Code in image_viewer.js:
     const  image  =  document.createElement("img");
     image.src  =  "http://lorempixel.com/400/400";
     document.body.appendChild(image);
-Here I made a fod
+Here I made a folder style in root folder. Put here a file called style.css and put following styling:
+
+    img{
+    	border: 10px  solid  black;
+    }
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MzgyMDQ4NiwyMjkzOTAzNDYsMTQ5OD
-IyNTMyNyw5NDIzMTk2NTMsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTEwNDQ2NjA3NDYsMjI5MzkwMzQ2LDE0OT
+gyMjUzMjcsOTQyMzE5NjUzLC0yMDg4NzQ2NjEyXX0=
 -->
