@@ -128,12 +128,12 @@ The first one image-webpack-loader loader is used to compress image and then url
 	    test: /\.(gif|png|jpe?g|svg)$/i,
 	    use: [
 	    {
-	    loader:  'file-loader',
-	    options: {
-		    outputPath: (url, resourcePath, context) =>{
-		    return  "assets/"  +  url;
+		    loader:  'file-loader',
+		    options: {
+			    outputPath: (url, resourcePath, context) =>{
+			    return  "assets/"  +  url;
+			    }
 		    }
-	    }
 	    },
 	    {
 	    
@@ -142,30 +142,30 @@ The first one image-webpack-loader loader is used to compress image and then url
 		    mozjpeg: {
 			    progressive:  true,
 			    quality:  65
+			},
+	    // optipng.enabled: false will disable optipn
+			    optipng: {	    
+			    enabled:  false,
 			    },
-		    // optipng.enabled: false will disable optipn
-				    optipng: {	    
-				    enabled:  false,
-				    },
-				    pngquant: {
-				    quality:  '65-90',
-				    speed:  4
-			    },
-			    gifsicle: {
-				    interlaced:  false,
-			    },
-			    // the webp option will enable WEBP
-			    webp: {
-				    quality:  75
-			    }
-		    
-			    }
-		    
+			    pngquant: {
+			    quality:  '65-90',
+			    speed:  4
+		    },
+		    gifsicle: {
+			    interlaced:  false,
+		    },
+		    // the webp option will enable WEBP
+		    webp: {
+			    quality:  75
+		    }
+	    
+		    }
+	    
 		    },
 	    ],
     
     }
-
+The new package file-loader bundles all image in a directory
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEwMzA0OTMzLC00NzU4NTgwMjhdfQ==
+eyJoaXN0b3J5IjpbMjMxMzE0NzYyLC00NzU4NTgwMjhdfQ==
 -->
