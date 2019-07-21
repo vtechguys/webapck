@@ -1,5 +1,8 @@
 # Module Loaders
-The module loaders are used to do some preprocessing on our files before they are added to our bundle.js file. Like babel is used to transpile the latest ES codes to older ones
+The module loaders are used to do some preprocessing on our files before they are added to our bundle.js file. Like babel is used to transpile the latest ES codes to older ones.
+## Adding babel
+Babel turns new ES code into older codes to able to run on old browser. Where as simply webpack is to link js modules together.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNDAyODk2NywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMjAzMTgzMjk4MywtMjA4ODc0NjYxMl19
 -->
