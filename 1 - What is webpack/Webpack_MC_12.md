@@ -1,12 +1,13 @@
 Module
-In Node.js or other module system a file may expose some or all of its content as public to be read in some other file.
+In Node.js or other module system a file may expose some or all of its content as public to be read in some other file. Create a folder structiure like this.
 
     |-src
-	    |--index.js
-	    |--s
-    |-build
+	|    |-- index.js
+	|    |-- sum.js
+
+THe
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0OTE1NTY4NiwtNDAxODA3ODIwLC0yMD
-g4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbNTIxNjgxODQ5LC00MDE4MDc4MjAsLTIwOD
+g3NDY2MTJdfQ==
 -->
