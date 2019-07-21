@@ -60,8 +60,8 @@ The changes in webpack config are in modules where we add another rule set for c
     	use: ["style-loader", "css-loader"],
     	test: /\.css$/
     }
-Now when we run build script and see bundle.js we will see the html output in browser
+Now when we run build script and see bundle.js we will see the html output in browser and we can see the image has a border.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NDc0Njg3OCwyMjkzOTAzNDYsMTQ5OD
-IyNTMyNyw5NDIzMTk2NTMsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbNDc3MjA4MTQ3LDIyOTM5MDM0NiwxNDk4Mj
+I1MzI3LDk0MjMxOTY1MywtMjA4ODc0NjYxMl19
 -->
