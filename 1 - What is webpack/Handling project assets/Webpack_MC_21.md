@@ -60,8 +60,9 @@ The changes in webpack config are in modules where we add another rule set for c
     	use: ["style-loader", "css-loader"],
     	test: /\.css$/
     }
-Now when we run build script and see bundle.js we will see the html output in browser and we can see the image has a border.![enter image description here](https://res.cloudinary.com/ajcloud/image/upload/v1563734695/webpack-style-loader.png)
+Now when we run build script and see bundle.js we will see the html output in browser and we can see the image has a border.![browser screenshot of applied css](https://res.cloudinary.com/ajcloud/image/upload/v1563734695/webpack-style-loader.png)
+Now if we see the element in developer tools we will find that the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ2NDgwOTcyLDIyOTM5MDM0NiwxNDk4Mj
+eyJoaXN0b3J5IjpbNTc0Mzk0MzQ2LDIyOTM5MDM0NiwxNDk4Mj
 I1MzI3LDk0MjMxOTY1MywtMjA4ODc0NjYxMl19
 -->
