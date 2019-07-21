@@ -30,8 +30,8 @@ Lets install webpack locally as dev dependency using `npm` or `yarn` . Here I ha
     }; 
     module.exports  =  config;
 
-Output property needed to resolve the path to build folder there we contain build file. If we notice the wepack bundle.js in we will see t
+Output property needed to resolve the path to build folder there we contain build file. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMjQ5NTA4NiwtMTY5MzA5ODMzMCw1Nj
-U3Njg3NjcsLTQwMTgwNzgyMCwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTE2NTc3MjkwOTQsLTE2OTMwOTgzMzAsNT
+Y1NzY4NzY3LC00MDE4MDc4MjAsLTIwODg3NDY2MTJdfQ==
 -->
