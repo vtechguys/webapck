@@ -62,9 +62,9 @@ The changes in webpack config are in modules where we add another rule set for c
     }
 Now when we run build script and see bundle.js we will see the html output in browser and we can see the image has a border.![browser screenshot of applied css](https://res.cloudinary.com/ajcloud/image/upload/v1563734695/webpack-style-loader.png)
 Now if we see the element in developer tools we will find that the style is being applied in the head in style tags.![webpack-css-loader-elements-devtools-ss](https://res.cloudinary.com/ajcloud/image/upload/v1563734931/webpack-css-loader-elements-devtools-ss.png)
-We created this html doc ourselves how could webpack have put this styling in our html. However on disk there is no change in file but in browser it seem 
+We created this html doc ourselves how could webpack have put this styling in our html. However on disk there is no change in file but in browser it seems there is some change? This means the change is occuring from bundle.js as its only thing we included in our html file manually. That means our style was somehow exported to bundle.js itself. This ca 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNjYwNjg5Nyw1NzQzOTQzNDYsMjI5Mz
-kwMzQ2LDE0OTgyMjUzMjcsOTQyMzE5NjUzLC0yMDg4NzQ2NjEy
-XX0=
+eyJoaXN0b3J5IjpbLTE3Njg3Njk4NTksNTc0Mzk0MzQ2LDIyOT
+M5MDM0NiwxNDk4MjI1MzI3LDk0MjMxOTY1MywtMjA4ODc0NjYx
+Ml19
 -->
