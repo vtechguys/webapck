@@ -100,6 +100,7 @@ Images from local can be loaded in two ways first image can be included in bundl
     npm install image-webpack-loader url-loader --save-dev
 
 The first one image-webpack-loader loader is used to compress image and then urls loader decide based on size of image that this needs to be included in bundle.js or as assets directory.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNzA1MTM2Nl19
+eyJoaXN0b3J5IjpbLTQ3NTg1ODAyOF19
 -->
