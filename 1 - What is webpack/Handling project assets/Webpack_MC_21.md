@@ -40,7 +40,9 @@ As babel-core does not know what code to map transpilations to so when babel sta
 So now we may test es import and export statement also if babel was successfully setup then this will work.
 ## Adding CSS loader
 Style and css loader help us to make small css files and import those css files at required places/components(reactjs). Thus development is lot easier now. We will make a `image_viewer.js` file which simply has to append to DOM an img tag. 
+css-loader: knows how to deal open and read with css imports. 
+style-loader: take css import and add them to html document
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5ODIyNTMyNyw5NDIzMTk2NTMsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMjI5MzkwMzQ2LDE0OTgyMjUzMjcsOTQyMz
+E5NjUzLC0yMDg4NzQ2NjEyXX0=
 -->
