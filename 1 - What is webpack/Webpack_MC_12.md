@@ -30,8 +30,8 @@ Lets install webpack locally as dev dependency using `npm` or `yarn` . Here I ha
     }; 
     module.exports  =  config;
 
-Output property needed to resolve the path to build folder there we contain build file. 
+Output property needed to resolve the path to build folder there we contain build file. ![enter image description here](https://res.cloudinary.com/ajcloud/image/upload/v1563726454/webpack-compile-console.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTc3MjkwOTQsLTE2OTMwOTgzMzAsNT
-Y1NzY4NzY3LC00MDE4MDc4MjAsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTkwMjg2NTE4MSwtMTY5MzA5ODMzMCw1Nj
+U3Njg3NjcsLTQwMTgwNzgyMCwtMjA4ODc0NjYxMl19
 -->
