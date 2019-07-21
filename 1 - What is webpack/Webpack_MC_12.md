@@ -58,8 +58,8 @@ What roughly webpack is doing.
     
     myModules[entryPointIndex]();
 
-webpack creates a array and wraps our file content  module in a function and place them inside the modules array. As index.js is emtry point of our project thus it is referd
+webpack creates a array and wraps our file content  module in a function and place them inside the modules array. As index.js is entry point of our project thus it is referred at index 1 of array and called at end. The sum is refered by using mod
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYzNTk0NzIxLC0xNjkzMDk4MzMwLDU2NT
-c2ODc2NywtNDAxODA3ODIwLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE3Njg1NTg0NTksLTE2OTMwOTgzMzAsNT
+Y1NzY4NzY3LC00MDE4MDc4MjAsLTIwODg3NDY2MTJdfQ==
 -->
