@@ -167,7 +167,6 @@ The first one image-webpack-loader loader is used to compress image and then url
 	    }
 	    
 	    },
-	    
 	    {
 	    
 		    loader:  'image-webpack-loader',
@@ -200,5 +199,5 @@ The first one image-webpack-loader loader is used to compress image and then url
     }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxODI1NjE0MSwtNDc1ODU4MDI4XX0=
+eyJoaXN0b3J5IjpbLTE3ODYwNDI5MTUsLTQ3NTg1ODAyOF19
 -->
