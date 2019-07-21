@@ -15,8 +15,8 @@ The contents of files. sum.js is utility function and index.js is entry point ut
     console.log(sum(10, 5));
 Now `node index.js` will run our index.js and we get console 15 as output on running index.js. 
 ## Webpack
-Lets install webpack locally as dev dependency using `npm` or `yarn` . Here I have used v2
+Lets install webpack locally as dev dependency using `npm` or `yarn` . Here I have used webpack@2.2.0 . As for version 2 we need a webpack.config.js file which is required by webapck which exposes some minimum configuratuon for webapck to run.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NTEwODM3MSw1NjU3Njg3NjcsLTQwMT
-gwNzgyMCwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMzgwOTUxMjUyLDU2NTc2ODc2NywtNDAxOD
+A3ODIwLC0yMDg4NzQ2NjEyXX0=
 -->
