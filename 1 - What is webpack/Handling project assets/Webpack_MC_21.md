@@ -53,8 +53,15 @@ Here I made a folder style in root folder. Put here a file called style.css and 
     img{
     	border: 10px  solid  black;
     }
+The changes in webpack config are in modules where we add another rule set for css files. in module
+
+    {
+    	// applied from right to left
+    	use: ["style-loader", "css-loader"],
+    	test: /\.css$/
+    }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDQ2NjA3NDYsMjI5MzkwMzQ2LDE0OT
-gyMjUzMjcsOTQyMzE5NjUzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTk3MjIxNjE2LDIyOTM5MDM0NiwxNDk4Mj
+I1MzI3LDk0MjMxOTY1MywtMjA4ODc0NjYxMl19
 -->
