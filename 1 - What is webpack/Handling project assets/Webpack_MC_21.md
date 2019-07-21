@@ -80,11 +80,11 @@ We created this html doc ourselves how could webpack have put this styling in ou
 
     npm i extract-text-webpack-plugin@2.0.0 --save-dev
 
-Plugins have different pipeline then the 
+Plugins have different pipeline then the webpack. The above plugn
 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzg3NDI0MCwtMTQ0NTk0MTA5Niw1Nz
-QzOTQzNDYsMjI5MzkwMzQ2LDE0OTgyMjUzMjcsOTQyMzE5NjUz
-LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbNjUyNjg2NSwtMTA3ODc0MjQwLC0xNDQ1OT
+QxMDk2LDU3NDM5NDM0NiwyMjkzOTAzNDYsMTQ5ODIyNTMyNyw5
+NDIzMTk2NTMsLTIwODg3NDY2MTJdfQ==
 -->
