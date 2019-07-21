@@ -95,8 +95,10 @@ Its new plugin for purpose is:
  This generates a single style css file. But for it to work manually add a link tag and add a refer to `./style.css` 
 
 ## Adding Image loaders
+Images from local can be loaded in two ways first image can be included in bundle.js as raw dataor else it can be sprately put into assets. For It to work we need two p
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzI1MjAxNTgsLTEwNzg3NDI0MCwtMT
-Q0NTk0MTA5Niw1NzQzOTQzNDYsMjI5MzkwMzQ2LDE0OTgyMjUz
-MjcsOTQyMzE5NjUzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTY2MzkyOTM5MiwtMTU3MjUyMDE1OCwtMT
+A3ODc0MjQwLC0xNDQ1OTQxMDk2LDU3NDM5NDM0NiwyMjkzOTAz
+NDYsMTQ5ODIyNTMyNyw5NDIzMTk2NTMsLTIwODg3NDY2MTJdfQ
+==
 -->
