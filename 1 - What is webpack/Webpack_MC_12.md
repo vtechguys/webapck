@@ -59,7 +59,8 @@ What roughly webpack is doing.
     myModules[entryPointIndex]();
 
 webpack creates a array and wraps our file content  module in a function and place them inside the modules array. As index.js is entry point of our project thus it is referred at index 1 of array and called at end. The sum module is picked from module referred function at myModules index. And used therebye in our file.
+Now to use to bundle inside a html we must make a index.html and add following bare min code.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjUyODc3MjUsLTE2OTMwOTgzMzAsNT
+eyJoaXN0b3J5IjpbLTIwNjgyOTEwOTMsLTE2OTMwOTgzMzAsNT
 Y1NzY4NzY3LC00MDE4MDc4MjAsLTIwODg3NDY2MTJdfQ==
 -->
