@@ -14,9 +14,10 @@ import small from "../assets/small.jpeg";
 // document.body.appendChild(image);
 
 const image1 = document.createElement("img");
-image.src = big;
+image1.src = big;
+console.log(big);
 document.body.appendChild(image1);
 
 const image2 = document.createElement("img");
-image.src = small;
+image2.src = small;
 document.body.appendChild(image2);

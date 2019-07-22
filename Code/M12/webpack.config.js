@@ -61,46 +61,46 @@ const config = {
                 "image-webpack-loader"
                 ]
                 */
-                
+
                 test: /\.(gif|png|jpe?g|svg)$/i,
                 use: [
-                {
-                    loader:  'file-loader',
-                    options: {
-                        outputPath: (url, resourcePath, context) =>{
-                        return  "assets/"  +  url;
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: (url, resourcePath, context) => {
+                                return "assets/" + url;
+                            }
                         }
-                    }
-                },
-                {
-                
-                    loader:  'image-webpack-loader',
-                    options: {
-                    mozjpeg: {
-                        progressive:  true,
-                        quality:  65
                     },
-                // optipng.enabled: false will disable optipn
-                        optipng: {	    
-                        enabled:  false,
-                        },
-                        pngquant: {
-                        quality:  '65-90',
-                        speed:  4
-                    },
-                    gifsicle: {
-                        interlaced:  false,
-                    },
-                    // the webp option will enable WEBP
-                    webp: {
-                        quality:  75
-                    }
-                
-                    }
-                
+                    {
+
+                        loader: 'image-webpack-loader',
+                        options: {
+                            mozjpeg: {
+                                progressive: true,
+                                quality: 65
+                            },
+                            // optipng.enabled: false will disable optipn
+                            optipng: {
+                                enabled: false,
+                            },
+                            pngquant: {
+                                quality: '65-90',
+                                speed: 4
+                            },
+                            gifsicle: {
+                                interlaced: false,
+                            },
+                            // the webp option will enable WEBP
+                            webp: {
+                                quality: 75
+                            }
+
+                        }
+
                     },
                 ],
-            
+
             }
         ]
     },
