@@ -35,7 +35,7 @@ Also changing the `index.js`.
 	    // a new script tag for our chunk when loaded over network.
     }
     document.body.appendChild(button);
-On action of button image_viewer is to be loaded that a dynamic import 
+On action of button image_viewer is to be loaded that a dynamic import older syntax was `System.import()` which is now replaced by `import()`. Which goes back to server requesting chunk by chunkId
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMjQ0MTEyNV19
+eyJoaXN0b3J5IjpbLTY0MjcwNjIyNV19
 -->
