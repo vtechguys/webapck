@@ -6,10 +6,11 @@ Splitting code into different modules and loading them when required is called a
     import  small  from  "../assets/small.jpeg";
     export  function  imageRederer(){
 	    const  image  =  document.createElement("img");
-	    image2.src  =  small;
-	    document.body.appendChild(image2);
+	    image.src  =  small;
+	    document.body.appendChild(image);
     }
+Also changing the `index.js`.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxMDE1MTgyXX0=
+eyJoaXN0b3J5IjpbLTEzODk2MTk1NTZdfQ==
 -->
