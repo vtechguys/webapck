@@ -62,9 +62,13 @@ This is because `index.js` file had some imports for react, redux which it depen
     }
 Now in dist we generate the `bundle.js, vendor.js` and `vendors~bundle~vendor.js`. The optimisation of webpack will bundle chunks of code together bunlde.js contains pure code we wrote. vendor.js some code from vendors and vendorsbundlevendor to containd some common code b/w two. 
 After doing this we will see error in console if we open the index.html. As we previously have manually generated the index.html and linked the scripts so this is not happening with other things we generated. So this needs to be fixed but manually each time may be headache so using a plugin. 
-W
+We will use plugin called html-webpack-plugin from npm. And use it as following in our webpack config.
+
+    //Top of file
+    const HtmlWebpackPlugin = require("html-webpack-plugin");
+    
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0OTcxMjk2NSwxODUxNTQ2NTI0LDExNT
+eyJoaXN0b3J5IjpbLTQ2ODE5OTg5NCwxODUxNTQ2NTI0LDExNT
 g1OTI5NTIsLTYzNjc2OTIzNywtMjA4ODc0NjYxMl19
 -->
