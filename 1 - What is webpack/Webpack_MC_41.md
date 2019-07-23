@@ -53,7 +53,12 @@ This will help us separate code into two bundle. One vendor.js and other bundle.
     ];
 
 Now run the `npm run build` we see that the file `vendor.js` is built separately and is large size but the `bundle.js` size is not being reduced? 
-This is because `index.js` file had some imports for react, redux which it depends upon and thus these are also compiled in `bundle.js` but whole point of code splitting this way for `vendor.js` was to separate the codes. To solve this we may use a plugin called [`SplitChunksPlugin`](https://webpack.js.org/plugins/split-chunks-plugin/) ( CommonsChunkPlugin is deprecated ). Now the chunks 
+This is because `index.js` file had some imports for react, redux which it depends upon and thus these are also compiled in `bundle.js` but whole point of code splitting this way for `vendor.js` was to separate the codes. To solve this we may use a plugin called [`SplitChunksPlugin`](https://webpack.js.org/plugins/split-chunks-plugin/) ( CommonsChunkPlugin is deprecated ). Now the chunks following code outputs the vendor chunks differently.  Add key to config.
+optimization: {
+	
+}
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNjc2OTIzNywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTk4MzkwNDYzNCwtNjM2NzY5MjM3LC0yMD
+g4NzQ2NjEyXX0=
 -->
