@@ -71,8 +71,8 @@ We will use plugin called html-webpack-plugin from npm. And use it as following 
 	    new HtmlWebpackPlugin(),
 	]
 Create a html index.html with minimal elements and a div with id root. Plugin will auto generate html script tags adding bundles to it.
-Browser  
+Browser cache file by name if name changes the file content is assumed to be changed. But if names are same thus file is assumed to be same always and picked from cache. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNjM1NzkzMiwxODUxNTQ2NTI0LDExNT
-g1OTI5NTIsLTYzNjc2OTIzNywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTEzNTcwNTE3OTUsMTg1MTU0NjUyNCwxMT
+U4NTkyOTUyLC02MzY3NjkyMzcsLTIwODg3NDY2MTJdfQ==
 -->
