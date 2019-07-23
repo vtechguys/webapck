@@ -73,7 +73,9 @@ We will use plugin called html-webpack-plugin from npm. And use it as following 
 Create a html index.html with minimal elements and a div with id root. Plugin will auto generate html script tags adding bundles to it.
 Browser cache file by name if name changes the file content is assumed to be changed. But if names are same thus file is assumed to be same  and always picked from cache.  But as we always genereate the same name bundles thus in production broswer may really lag behnd from orignal  that may have changed thus we use hash appended to file bundle name. To make it work simply do make `output.filename` as `[name][chunkhash].bundle.js`. And it will always generate a hashed appended for file if content changes so does the hash and thus  newer version is assumed to be available and will be picked up from server. As dependencies or vendor changes not often the hash remains same for long period of time and can be thus file cache reused. Okay Last thing to deal with is we see dist is filled for each build and thus there exist duplicates thus cleaning of dist is required before each compile. Will do it using plugin. 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4Njc3OTAzNSwxODUxNTQ2NTI0LDExNT
-g1OTI5NTIsLTYzNjc2OTIzNywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbNjY5Mzc2MDksMTE4Njc3OTAzNSwxODUxNT
+Q2NTI0LDExNTg1OTI5NTIsLTYzNjc2OTIzNywtMjA4ODc0NjYx
+Ml19
 -->
