@@ -60,8 +60,8 @@ This is because `index.js` file had some imports for react, redux which it depen
     		chunks: "all"
        }
     }
-Now in dist we generate the bundle.js, vendor.js and vendor~bundle
+Now in dist we generate the bundle.js, vendor.js and `vendors~bundle~vendor.js`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY5NjgwMDc0LC02MzY3NjkyMzcsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTE1ODU5Mjk1MiwtNjM2NzY5MjM3LC0yMD
+g4NzQ2NjEyXX0=
 -->
