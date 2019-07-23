@@ -66,9 +66,13 @@ We will use plugin called html-webpack-plugin from npm. And use it as following 
 
     //Top of file
     const HtmlWebpackPlugin = require("html-webpack-plugin");
-    
+    //in config add plugins property.
+    plugins: [ 
+	    new HtmlWebpackPlugin({
+		}),
+	]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2ODE5OTg5NCwxODUxNTQ2NTI0LDExNT
+eyJoaXN0b3J5IjpbLTkxMjYwODYxOSwxODUxNTQ2NTI0LDExNT
 g1OTI5NTIsLTYzNjc2OTIzNywtMjA4ODc0NjYxMl19
 -->
