@@ -60,8 +60,8 @@ This is because `index.js` file had some imports for react, redux which it depen
     		chunks: "all"
        }
     }
-Now in dist we generate the bundle.js, vendor.js and `vendors~bundle~vendor.js`
+Now in dist we generate the `bundle.js, vendor.js` and `vendors~bundle~vendor.js`. The optimization of webpack will bundle chunks of code together bunlde.js contains pure code we wrote. vendor.js some code from vendors and vendorsbundlevendor to containd some common code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1ODU5Mjk1MiwtNjM2NzY5MjM3LC0yMD
-g4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTUyNjYxNTU4MiwxMTU4NTkyOTUyLC02Mz
+Y3NjkyMzcsLTIwODg3NDY2MTJdfQ==
 -->
