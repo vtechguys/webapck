@@ -70,8 +70,9 @@ We will use plugin called html-webpack-plugin from npm. And use it as following 
     plugins: [ 
 	    new HtmlWebpackPlugin(),
 	]
-Create a html index.html with minimal elements and a div with id root. Plugin will auto generate html script tags adding bundles to it. 
+Create a html index.html with minimal elements and a div with id root. Plugin will auto generate html script tags adding bundles to it.
+Browser  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE0MTM4NzU0LDE4NTE1NDY1MjQsMTE1OD
-U5Mjk1MiwtNjM2NzY5MjM3LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTUwNjM1NzkzMiwxODUxNTQ2NTI0LDExNT
+g1OTI5NTIsLTYzNjc2OTIzNywtMjA4ODc0NjYxMl19
 -->
