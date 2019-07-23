@@ -68,11 +68,10 @@ We will use plugin called html-webpack-plugin from npm. And use it as following 
     const HtmlWebpackPlugin = require("html-webpack-plugin");
     //in config add plugins property.
     plugins: [ 
-	    new HtmlWebpackPlugin({
-		}),
+	    new HtmlWebpackPlugin(),
 	]
-
+This will auto generate html script tags adding bundles to it. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMjYwODYxOSwxODUxNTQ2NTI0LDExNT
+eyJoaXN0b3J5IjpbMTYxNzIxNzY3NCwxODUxNTQ2NTI0LDExNT
 g1OTI5NTIsLTYzNjc2OTIzNywtMjA4ODc0NjYxMl19
 -->
