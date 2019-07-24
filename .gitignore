@@ -1,4 +1,1 @@
-Code/M12/node_modules
-Code/M3/node_modules
-
-Code/M4/WebpackProject/node_modules
+Code/*/node_modules
